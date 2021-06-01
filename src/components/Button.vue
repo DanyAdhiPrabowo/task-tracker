@@ -1,6 +1,6 @@
 <template>
   <button 
-    style="background-color: green" class="btn"
+    :style="{background: color}" class="btn"
     @click="$emit('btn-click')"
   >
       {{text}}
@@ -15,7 +15,8 @@
       text: {
         type: String,
         default: 'Click'
-      }
+      },
+      color: String
     }
   }
 </script>
